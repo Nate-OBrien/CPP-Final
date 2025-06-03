@@ -1,4 +1,14 @@
+/*
+Name: Nate, Jake, Josh
+Date: 6/3/25
+Program: CPP Final
+Extra: GUI
+*/
+
 #include <iostream>
+#include <vector>
+#include <algorithm>
+#include "cards.h"
 
 using namespace std;
 
@@ -23,6 +33,7 @@ bool deal (int delaer){
     }
     return deal;
 }
+
 int winning (bool win, int bet, int bank){
     if win = true{
         bank = bank + (bet*2);
@@ -35,7 +46,25 @@ int winning (bool win, int bet, int bank){
 
 
 int main() {
-   
+    vector <int> cards; 
+
+    cout << "Hello, World!" << endl;
+    
+    while(true){
+        int newCard = card();
+        auto it = find(cards.begin(), cards.end(), newCard);
+        
+        if(it == cards.end()){
+            cards.push_back(newCard);
+            break;
+        }
+    }
+    
+    cout << card();
+
+
+    return 0;
+
 
 
 }
