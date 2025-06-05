@@ -9,7 +9,7 @@ int card(){
 srand(time(0));
 
     int randomCard = rand() % 52 + 1;
-    cout << randomCard << endl; 
+    std::cout << randomCard << std::endl; 
     return randomCard;
     
 }
