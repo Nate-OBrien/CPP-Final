@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
     w.setWindowTitle("Collectable Card Game");
+    w.setFixedSize(804, 600);
     // seed for random
     srand(time(NULL));
     return a.exec();
