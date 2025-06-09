@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
+    w.setWindowTitle("Collectable Card Game");
     // seed for random
     srand(time(NULL));
     return a.exec();
