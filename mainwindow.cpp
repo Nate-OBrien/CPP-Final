@@ -155,7 +155,7 @@ void MainWindow::on_betSpinBox_valueChanged(int arg1) {
 
 void MainWindow::on_confirmBetButton_clicked()
 {
-
+    betAmount = ui->betSpinBox->value();
     ui->betLabel->setText("Bet: " + QString::number(betAmount) + " Duhblooniess");
 
     // gets the cards for both people
@@ -236,5 +236,3 @@ void MainWindow::on_playAgainButton_clicked() {
         ui->winWidget->setVisible(false);
     });
 }
-
-
